@@ -7,5 +7,5 @@ class campos_extras(models.Model):
     _inherit = 'account.move'
 
     desc = fields.Char(
-        string="Descripción",
+        string="descripción",
     )
