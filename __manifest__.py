@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Campos Extras',
-    'version': '13.4',
+    'version': '13.1',
     'author': 'Demsa',
     'website': '',
     'depends': [
@@ -13,10 +13,10 @@
         # demo
         # reports
         # views
-        'views/purchase_order.xml',
-        'views/stock_picking.xml',
+        #'views/purchase_order.xml',
+        #'views/stock_picking.xml',
         'views/account_move.xml',
-        'views/hr_employee.xml',
+        #'views/hr_employee.xml',
 
 
     ],
