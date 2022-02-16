@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="compra_validar_botones_group" model="res.groups">
+        <field name="name">Compra_validar_botones</field>
+    </record>
+</odoo>
