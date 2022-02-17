@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="purchase_requisition_view_form" model="ir.ui.view">
+        <field name="name">purchase.requisition.form.inherited</field>
+        <field name="model">purchase.requisition</field>
+        <field name="inherit_id" ref="purchase_requisition.view_purchase_requisition_form" />
+        <field name="arch" type="xml">
+            <header>
+
+                <xpath expr="/form/header/field[@name='state']" position="replace">
+                    <field name="state" widget="statusbar" statusbar_visible="draft,Autorizar,in_progress,open,done" />
+                    <field name="state_blanket_order" widget="statusbar" statusbar_visible="draft,Autorizar,ongoing,done" attrs="{'invisible': [('is_quantity_copy', '!=', 'none')]}" />
+                </xpath>
+            </header>
+            <xpath expr="/form/header/button[@name='action_in_progress']" position="replace">
+                <button name="action_in_progress" states="Autorizar" string="Confirm" type="object" class="btn-primary" />
+            </xpath>
+            <xpath expr="/form/header/button[@name='action_cancel']" position="replace">
+                <button name="action_cancel" states="draft,Autorizar,in_progress,ongoing" string="Cancel" type="object" />
+            </xpath>
+            <button name="action_in_progress" position="before">
+                <button name="action_autorizar" string="Autorizar" type="object" states="draft" class="oe_highlight" />
+            </button>
+
+            <field name="type_id" position="after">
+                <field name="notas" />
+            </field>
+        </field>
+    </record>
+
+
+</odoo>
