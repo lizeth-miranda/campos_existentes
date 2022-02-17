@@ -15,4 +15,4 @@ class acuerdo_compra(models.Model):
         self.write({'state': 'Autorizar'})
 
     #doc_ori = fields.Many2one('Documento Origen Prueba', 'documento.origen',)
-    notas = fields.Text(string="Notas",)
+    #notas = fields.Text(string="Notas",)
