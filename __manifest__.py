@@ -1,12 +1,10 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Campos Extras',
-    'version': '13.3',
+    'version': '13.4',
     'author': 'Demsa',
     'website': '',
-    'depends': [
-        'purchase',
-    ],
+    'depends': ['base', 'purchase_requisition', 'account'],
     'data': [
         # security
         # data
@@ -17,8 +15,10 @@
         "groups/inventario_validar_botones.xml",
         "groups/facturas_validar_botones.xml",
         # views
+        
         #'views/purchase_order.xml',
         #'views/stock_picking.xml',
+        "views/purchase_requisition.xml",
         'views/account_move.xml',
         #'views/hr_employee.xml',
 
