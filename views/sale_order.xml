@@ -11,6 +11,9 @@
             <field name="partner_id" position="after">
                 <field name="num_contrato" />
             </field>
+            <field name="analytic_account_id" position="after">
+                <field name="cuenta_analitica_obra" />
+            </field>
         </field>
     </record>
 
