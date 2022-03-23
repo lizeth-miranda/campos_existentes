@@ -10,3 +10,5 @@ class campos_extras(models.Model):
     #     string="Orden de Compra",
     # )
     num_contrato = fields.Char(string="Número de Contrato",)
+    cuenta_analitica_obra = fields.Many2one(
+        comodel_name="account.analytic.account", string="Cuenta analítica Obra")
