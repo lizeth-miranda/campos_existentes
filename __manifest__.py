@@ -18,7 +18,7 @@
         
         #'views/purchase_order.xml',
         #'views/stock_picking.xml',
-        #"views/purchase_requisition.xml",
+        "views/purchase_requisition.xml",
         'views/account_move.xml',
         #'views/hr_employee.xml',
         'views/sale_order.xml',
