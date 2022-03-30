@@ -5,6 +5,9 @@
         <field name="model">purchase.requisition</field>
         <field name="inherit_id" ref="purchase_requisition.view_purchase_requisition_form" />
         <field name="arch" type="xml">
+            <field name="currency_id" position="after">
+                <field name="usuario" readonly="1" />
+            </field>
             <!-- <header>
 
                 <xpath expr="/form/header/field[@name='state']" position="replace">
@@ -21,9 +24,7 @@
             <button name="action_in_progress" position="before">
                 <button name="action_autorizar" string="Autorizar" type="object" states="draft" class="oe_highlight" />
             </button> -->
-            <field name="currency_id" position="after">
-                <field name="usuario" readonly="1" />
-            </field>
+            
         </field>
     </record>
 
