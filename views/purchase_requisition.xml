@@ -8,7 +8,7 @@
             <field name="currency_id" position="after">
                 <field name="usuario" readonly="1" />
             </field>
-            <!-- <header>
+            <header>
 
                 <xpath expr="/form/header/field[@name='state']" position="replace">
                     <field name="state" widget="statusbar" statusbar_visible="draft,Autorizar,in_progress,open,done" />
@@ -22,8 +22,8 @@
                 <button name="action_cancel" states="draft,Autorizar,in_progress,ongoing" string="Cancel" type="object" />
             </xpath>
             <button name="action_in_progress" position="before">
-                <button name="action_autorizar" string="Autorizar" type="object" states="draft" class="oe_highlight" />
-            </button> -->
+                <button name="action_autorizar" string="Autorizar" type="object" states="draft" class="oe_highlight" groups="campos_extras.compra_boton_autorizar" />
+            </button>
             
         </field>
     </record>
