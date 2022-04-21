@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Campos Extras',
-    'version': '13.10',
+    'version': '13.11',
     'author': 'Demsa',
     'website': '',
     'depends': ['base', 'purchase_requisition', 'account'],
