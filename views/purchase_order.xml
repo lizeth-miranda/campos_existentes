@@ -4,10 +4,29 @@
         <field name="name">purchase.orderview.form.inherited</field>
         <field name="model">purchase.order</field>
         <field name="inherit_id" ref="purchase.purchase_order_form" />
+        <field name="groups_id" eval="[(6,0,[ref('campos_extras.calidad_orden_compra')])]" />
         <field name="arch" type="xml">
-            <field name="origin" position="after">
+            <!-- <field name="origin" position="after">
                 <field name="numero_fact" />
-            </field>
+            </field> -->
+            <xpath expr="//field[@name='amount_total']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='amount_tax']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='amount_untaxed']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='price_subtotal']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='taxes_id']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='price_unit']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
         </field>
     </record>
 
