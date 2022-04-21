@@ -17,7 +17,7 @@
         "groups/boton_autorizar.xml",
         "groups/calidad_orden_Compra.xml",
         # views
-        'views/purchase_order.xml',
+        #'views/purchase_order.xml',
         #'views/stock_picking.xml',
         "views/purchase_requisition.xml",
         'views/account_move.xml',
