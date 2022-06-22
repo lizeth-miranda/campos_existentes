@@ -7,6 +7,7 @@ class acuerdo_compra(models.Model):
     _inherit = 'hr.expense'
 
     total_amount_negative = fields.Monetary(compute="amount_negative")
+    done = fields.Selection([('hecho', 'Registrado')], string='Enviado', )
 
     def amount_negative(self):
         for record in self:
@@ -22,3 +23,11 @@ class acuerdo_compra(models.Model):
                 'account_id': record.analytic_account_id.id,
                 'amount': record.total_amount_negative,
             })
+            record.done = 'hecho'
+        return {
+            'effect': {
+                'fadeout': 'slow',
+                'message': 'Registro Exitoso',
+                'type': 'rainbow_man',
+            }
+        }
