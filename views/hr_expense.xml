@@ -7,11 +7,8 @@
         <field name="arch" type="xml">
 
             <button name="action_submit_expenses" position="before">
-                <button name="send_cuenta_analitica" string="Cuenta Analitica" type="object" class="oe_highlight" groups="" />
+                <button name="send_cuenta_analitica" string="Cuenta Analitica" type="object" class="oe_highlight" />
             </button>
-            <!-- <field name="payment_mode" position="after">
-                <field name="notas" />
-            </field> -->
         </field>
     </record>
 </odoo>
