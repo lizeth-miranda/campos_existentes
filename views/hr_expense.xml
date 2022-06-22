@@ -7,8 +7,11 @@
         <field name="arch" type="xml">
 
             <button name="action_submit_expenses" position="before">
-                <button name="send_cuenta_analitica" string="Cuenta Analitica" type="object" class="oe_highlight" />
+                <button name="send_cuenta_analitica" string="Cuenta Analitica" type="object" class="oe_highlight" attrs="{'invisible':[('done', '=', 'hecho')]}" />
             </button>
+            <field name="total_amount" position="after">
+                <field name="done" readonly="1" />
+            </field>
         </field>
     </record>
 </odoo>
