@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="grupo_rh" model="res.groups">
+        <field name="name">Grupo RH</field>
+    </record>
+</odoo>
