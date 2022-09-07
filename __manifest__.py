@@ -16,6 +16,7 @@
         "groups/facturas_validar_botones.xml",
         "groups/boton_autorizar.xml",
         "groups/calidad_orden_Compra.xml",
+        "groups/grupo_RH.xml",
         # views
         #'views/purchase_order.xml',
         #'views/stock_picking.xml',
