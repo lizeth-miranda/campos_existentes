@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Campos Extras',
-    'version': '13.2',
+    'version': '13.3',
     'author': 'Demsa',
     'website': '',
     'depends': ['base', 'purchase_requisition', 'account'],
@@ -20,7 +20,8 @@
         # views
         #'views/purchase_order.xml',
         #'views/stock_picking.xml',
-        "views/purchase_requisition.xml",
+        'views/stock_picking_type.xml',
+        'views/purchase_requisition.xml',
         'views/account_move.xml',
         #'views/hr_employee.xml',
         'views/sale_order.xml',
