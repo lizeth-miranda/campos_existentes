@@ -4,7 +4,6 @@
     'version': '13.6',
     'author': 'Demsa',
     'website': '',
-    'license': 'LGPL-3',
     'depends': ['base', 'purchase_requisition', 'account'],
     'data': [
         # security
@@ -30,4 +29,5 @@
 
 
     ],
+    'license': 'LGPL-3',
 }
