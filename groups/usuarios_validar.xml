@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="usuarios_validar_group" model="res.groups">
+        <field name="name">usaurios_validar</field>
+    </record>
+</odoo>
