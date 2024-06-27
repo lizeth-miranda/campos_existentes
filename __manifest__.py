@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Campos Extras',
-    'version': '13.6',
+    'version': '13.1',
     'author': 'Demsa',
     'website': '',
     'depends': ['base', 'purchase_requisition', 'account'],
@@ -17,6 +17,9 @@
         "groups/boton_autorizar.xml",
         "groups/calidad_orden_Compra.xml",
         "groups/grupo_RH.xml",
+        "groups/usuarios_confirmar.xml",
+        "groups/usuarios_validar.xml",
+        "groups/boton_almacen.xml",
         # views
         #'views/purchase_order.xml',
         #'views/stock_picking.xml',
